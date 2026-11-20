@@ -20,7 +20,7 @@ tools:context=".MainActivity">
         android:id="@+id/LogoView"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/LogoMainScreen"
+        android:src="@drawable/logo_main_screen"
         android:scaleType="centerCrop"
 
         app:layout_constraintStart_toStartOf="parent"
