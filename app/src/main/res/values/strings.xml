@@ -18,6 +18,7 @@
     <string name="create_account">Create Account</string>
     <string name="create_account_text">Hi, kindly fill in the form to proceed\ncombat</string>
 
-
+    <string name="login_main_text">Welcome Back!</string>
+    <string name="login_second_text">Hi, Kindly login to continue battle</string>
 
 </resources>
