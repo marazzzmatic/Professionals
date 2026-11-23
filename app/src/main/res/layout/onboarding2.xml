@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
         android:text="Skip"
+        android:textStyle="bold"
         android:textColor="@color/main_pink"
         app:layout_constraintTop_toTopOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="parent"

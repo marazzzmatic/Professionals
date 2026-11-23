@@ -10,4 +10,14 @@
     <string name="screen3_text_main">Schedule Games\nWith Friends </string>
     <string name="screen3_text_second">Easily create an upcoming\nevent and get ready for battle.\nYeah! real combat fella.</string>
 
+    <string name="screen4_text_main">Text, Audio and\nVideo Chat</string>
+    <string name="screen4_text_second">Intuitive real life experience on\nmobile. Chat with fellow gamers\nbefore and after combat for\nfree!</string>
+
+    <string name="btnText_main">Let\'s Combat!</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="create_account_text">Hi, kindly fill in the form to proceed\ncombat</string>
+
+
+
 </resources>
