@@ -5,4 +5,7 @@
     
     <color name="light_pink">#FF6480</color>
     <color name="main_pink">#F22E63</color>
+
+    <color name="btn_google">#F34A38</color>
+    <color name="btn_facebook">#2672CB</color>
 </resources>

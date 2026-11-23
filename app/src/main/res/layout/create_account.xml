@@ -1,13 +1,12 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    android:id="@+id/scrollMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/createAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -15,70 +14,67 @@
             android:id="@+id/img_createAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/image4_create_account"
             android:layout_marginTop="50dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/image4_create_account"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Tv1"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
             android:text="@string/create_account"
             android:textColor="@color/main_pink"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/img_createAccount"
             app:layout_constraintStart_toStartOf="parent"
-             />
+            app:layout_constraintTop_toBottomOf="@id/img_createAccount" />
 
         <TextView
             android:id="@+id/secondText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:text="@string/create_account_text"
-            android:layout_marginStart="80dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Tv1"
-            />
+            app:layout_constraintTop_toBottomOf="@id/Tv1" />
 
         <EditText
             android:id="@+id/etFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
             android:hint="Full Name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/secondText1"
-            />
+            app:layout_constraintTop_toBottomOf="@id/secondText1" />
 
         <EditText
             android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
             android:hint="User Name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etFullName"
-            />
+            app:layout_constraintTop_toBottomOf="@id/etFullName" />
 
         <EditText
             android:id="@+id/etCountryCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
             android:hint="+234"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etUserName"
-            />
+            app:layout_constraintTop_toBottomOf="@id/etUserName" />
 
         <EditText
             android:id="@+id/etPhone"
@@ -86,23 +82,132 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/main_pink"
             android:hint="Your Phone"
-            app:layout_constraintBottom_toBottomOf="@id/etCountryCode"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@id/etCountryCode"
-            app:layout_constraintTop_toTopOf="@id/etCountryCode"/>
+            app:layout_constraintTop_toBottomOf="@id/etUserName" />
 
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
             android:hint="Email"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etCountryCode"
-            />
+            app:layout_constraintTop_toBottomOf="@id/etCountryCode" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main_pink"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/gradientBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/button_custom1"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etConfirmPassword" />
+
+        <TextView
+            android:id="@+id/connText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Connect with"
+            android:textColor="@color/main_pink"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gradientBtn2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_google"
+            android:text="G+"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/connText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebookBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_facebook"
+            android:text="f"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/connText" />
+
+        <TextView
+            android:id="@+id/TvHaveAnAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Already have an account?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/googleBtn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Login"
+            android:textColor="@color/main_pink"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvHaveAnAcc" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

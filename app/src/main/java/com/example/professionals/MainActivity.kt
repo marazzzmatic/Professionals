@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.create_account) // временно
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.createAccount)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.scrollMain)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
