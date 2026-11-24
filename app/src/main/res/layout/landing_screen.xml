@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- карточка расписание -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSchedule"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:foreground="?attr/selectableItemBackground"     android:padding="24dp">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvTitleSched"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Schedule"
@@ -34,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvDesc"
+        android:id="@+id/tvDescSched"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -42,13 +43,12 @@
         android:text="Easily schedule event/games then find like minded players for battle. You up for it?"
         android:textColor="@android:color/white"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imgIllustration"
+        app:layout_constraintEnd_toStartOf="@+id/imgIllustrationSched"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitleSched" />
 
-    <!-- Стрелочка внизу слева -->
     <ImageView
-        android:id="@+id/imgArrow"
+        android:id="@+id/imgArrowSched"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -56,11 +56,10 @@
         app:tint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+        app:layout_constraintTop_toBottomOf="@id/tvDescSched" />
 
-    <!-- Иллюстрация справа (девушка с часами) -->
     <ImageView
-        android:id="@+id/imgIllustration"
+        android:id="@+id/imgIllustrationSched"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="fitCenter"
@@ -69,12 +68,78 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 
+    <!-- карточка статистика -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/cardSchedule"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_schedule_card"
+            android:foreground="?attr/selectableItemBackground"     android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvTitleStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistics"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescStat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="All data from previous and upcoming games can be found here "
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/imgIllustration"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleStat" />
+
+            <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDescStat" />
+
+            <ImageView
+                android:id="@+id/imgIllustration"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_card2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
 
-    <!-- Корневой контейнер для нижней панели -->
+    <!-- нижняя панель -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/customBottomBar"
         android:layout_width="match_parent"
