@@ -20,5 +20,17 @@
 
     <string name="login_main_text">Welcome Back!</string>
     <string name="login_second_text">Hi, Kindly login to continue battle</string>
+    
+    <string name="sched_card_text">Schedule</string>
+    <string name="sched_card_desc">Easily schedule event/games then find like minded players for battle. You up for it?</string>
+
+    <string name="stat_card_text">Statistic</string>
+    <string name="stat_cart_desc">All data from previous and upcoming games can be found here</string>
+
+    <string name="comb_card_text">Discover Combats</string>
+    <string name="comb_card_desc">Find out what’s new and compete among players with new challenges and earn cash with game points </string>
+
+    <string name="msg_players_card_text">Message Players</string>
+    <string name="msg_players_card_desc">Found the profile of a player that interests you? Start a conversation</string>
 
 </resources>

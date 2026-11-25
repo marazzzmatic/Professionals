@@ -11,7 +11,7 @@
 
     <!-- БЕЛАЯ ОБВОДКА -->
     <stroke
-        android:width="5dp"
+        android:width="7dp"
     android:color="#FFFFFF" />
 
     <!-- Для круга (oval) этот тег не обязателен, но если он есть — он не мешает -->
